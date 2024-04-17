@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wanderer</title>
+  <script type="text/javascript" src="jsFile.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<!-- OnLoad functions:
+disableScroll(): disables scrolling to ensure movement of the character does not affect the orientation of the page
+startedOrNot(): function that runs after the first round has been played (starts the game and skips the starting page)
+ -->
+<body onload="disableScroll();startedOrNot()" id="bodyPage">
+
+<div id="characterPick">
+    <div id="gameTitle">
+        <div class="center">
+            Wanderer
+        </div>
+    </div>
+    <div id="characterBox" class="center">
+        <div class="center" id="innerCharacterBox">
+            <t1>Choose a Character</t1>
+            <br>
+            <br>
+            <button class="transparentButton" onclick="startGame('1')"><img width='32' src='images/character1.png' alt=""></button>
+            <button class="transparentButton" onclick="startGame('2')"><img width='32' src='images/character2.png' alt=""></button>
+            <button class="transparentButton" onclick="startGame('3')"><img width='32' src='images/character3.png' alt=""></button>
+        </div>
+    </div>
+    <div id="gameCreators">
+        <div class="center">
+            E & E
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
