@@ -6,10 +6,8 @@ let bigScore = parseInt(localStorage.getItem("score"));
 <!--Function to start game depending on user's chosen character-->
 function startGame(characterNum){
     if(bigScore === 0){
-        localStorage.setItem("characterPicker", characterNum);
-    }
-    if(bigScore === 0){
         alert("Use arrow keys to navigate");
+        localStorage.setItem("characterPicker", parseInt(characterNum));
     }
     <!--Creative format of the page-->
     let x = document.getElementById("characterPick");
@@ -30,14 +28,14 @@ function startGame(characterNum){
 <!--Function to choose character. Game will run with chosen character-->
 function chooseCharacter(){
     let num = parseInt(localStorage.getItem("characterPicker"));
-    if(num === 1){
-        character = "1";
+    if(num == 1){
+        character = 1;
         return "<img style='width: 32px; height: 32px' id='character' src='images/character1.png' alt=\"\">";
     }else if(num == 2){
-        character = "2";
+        character = 2;
         return "<img style='width: 32px; height: 32px' id='character' width='32' src='images/character2.png' alt=\"\">";
     }else{
-        character = "3";
+        character = 3;
         return "<img style='width: 32px; height: 32px' id='character' width='32' src='images/character3.png' alt=\"\">";
     }
 }
