@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fight</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="pictureAdder()">
+    <!--Main Container-->
+    <div class="main-container" id="main-container">
+        <div class="main">
+
+            <!--Header-->
+            <h1 id="title">Fight</h1>
+
+            <!--Main Box-->
+            <div class="main-box" id="location">
+                <div class="show-answer"><h3 id="answer">Click Start to Begin</h3></div>
+
+                <div class="box1">
+                    <div class="box-col">
+                        <input type="text" id="inputText" class="inputText">
+                    </div>
+
+                    <div class="add-s">
+                        <p id="operationPlaceHolder"></p>
+                    </div>
+
+                    <div class="box-col">
+                        <input type="text" id="inputText1" class="inputText">
+                    </div>
+                </div>
+
+                <!--Text Input-->
+                <div class="box2">
+                    <input type="text" id="inputText2">
+                </div>
+
+                <div class="box2">
+                    <!--Check Answer Button-->
+                    <button hidden id="checkButton" class="button" onclick="check()">Check Answer</button>
+
+                    <!--Next Question Button-->
+                    <button id="startButton" class="button" onclick="showQuestion()">START</button>
+                </div>
+
+                <div class="box3">
+                    <!--Score Counter-->
+                    <button hidden class="button" id="continueButton" onclick="continueGame()">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div id="picPlace">
+
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
